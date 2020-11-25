@@ -1,0 +1,249 @@
+:root {
+  --red: hsl(0, 100%, 68%);
+  --very-dark-blue: hsl(230, 29%, 20%);
+  --dark-gray-blue: hsl(230, 11%, 40%);
+  --gray-blue: hsl(231, 7%, 65%);
+  --light-gray-blue: hsl(207, 33%, 95%);
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-weight: 400;
+  box-sizing: border-box;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  color: var(--very-dark-blue);
+  padding: 1.5rem;
+  position: relative;
+  z-index: 2;
+  width: 100vw;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+nav,
+span,
+#cta {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+h2,
+#to-see {
+  letter-spacing: 2px;
+}
+
+/* ------ BACKGROUND ------ */
+
+html::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--light-gray-blue);
+  width: 50%;
+  height: 55%;
+  border-bottom-left-radius: 50px;
+  z-index: 1;
+}
+
+/* ------ IMAGE / RIGHT SECTION ------ */
+
+.right-container {
+  margin-left: -2rem;
+  padding-bottom: 4rem;
+}
+
+#devices-img {
+  width: 145vw;
+}
+
+/* ------ SHOW/HIDE HAMBURGER ------ */
+
+nav {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.show {
+  display: block;
+}
+
+#close-icon {
+  display: none;
+}
+
+nav.show #close-icon {
+  display: block;
+}
+
+nav.show #hamburger-icon {
+  display: none;
+}
+
+nav.show #hamburger-div {
+  display: block;
+}
+
+#menu-btn {
+  border-style: none;
+  background-color: var(--light-gray-blue);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+#menu-btn img {
+  background-color: var(--light-gray-blue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#hamburger-div {
+  display: none;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  background-color: white;
+  text-align: center;
+  padding-top: 1.5rem;
+  border-radius: 5px;
+  box-shadow: -4px 5px 10px 1px var(--shadow);
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1.5rem;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+#login {
+  text-decoration: none;
+  color: var(--gray-blue);
+  font-weight: 700;
+}
+#login:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gray-blue);
+}
+
+
+hr {
+  margin: 1rem auto;
+  width: 85%;
+  height: 2px;
+  background-color: var(--light-gray-blue);
+  border: none;
+}
+
+/* ----- TEXT / LEFT SECTION ------*/
+
+.left-container {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: var(--gray-blue);
+}
+
+#new {
+  border-radius: 50px;
+  background-color: var(--very-dark-blue);
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding: 2px 5px 2px 9px;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  width: 350px;
+}
+
+h3 {
+  color: var(--gray-blue);
+  width: 320px;
+}
+
+#cta {
+  background-color: var(--red);
+  color: white;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-style: none;
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#cta:hover {
+    opacity: 0.5;
+
+}
+
+#to-see,
+button {
+  width: 180px;
+}
+
+#to-see {
+  color: var(--gray-blue);
+}
+
+/* ------ FOOTER ------ */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  font-size: 10px;
+  text-align: center;
+}
+.attribution a {
+  font-size: 10px;
+  color: var(--gray-blue);
+}
